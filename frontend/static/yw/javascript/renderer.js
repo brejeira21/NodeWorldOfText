@@ -491,7 +491,7 @@ var fracBlockTransforms = [
 	[2, 1/8, 4/8],
 	[2, 1/8, 5/8],
 	[2, 1/8, 6/8],
-	,,,,,,[2, 2/8],
+	[2, 2/8],
 	[2, 3/8],
 	[2, 5/8],
 	[2, 6/8],
@@ -500,7 +500,8 @@ var fracBlockTransforms = [
 	[1, 3/8],
 	[1, 5/8],
 	[1, 6/8],
-	[1, 7/8]]
+	[1, 7/8], 
+	[2, 2/8, 3/8]]
 ];
 
 function isValidSpecialSymbol(charCode) {
@@ -513,6 +514,7 @@ function isValidSpecialSymbol(charCode) {
 	if(charCode >= 0x1FB3C && charCode <= 0x1FB6F) return true;
 	if(charCode >= 0x1FB70 && charCode <= 0x1FB7B) return true;
 	if(charCode >= 0x1FB82 && charCode <= 0x1FB8B) return true;
+	if(charCode >= 0x1FBFB && charCode <= 0x1FBFC) return true;
 
 	switch(charCode) {
 		case 0x25B2: return true;
